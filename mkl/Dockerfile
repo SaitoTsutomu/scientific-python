@@ -1,8 +1,8 @@
 FROM ubuntu-debootstrap:14.04
 
-ENV PATH /opt/conda/bin:$PATH \
-    LANG C.UTF-8 \
-    MINICONDA Miniconda3-latest-Linux-x86_64.sh
+ENV PATH=/opt/conda/bin:$PATH \
+    LANG=C.UTF-8 \
+    MINICONDA=Miniconda3-latest-Linux-x86_64.sh
 RUN apt-get update --fix-missing && apt-get install -y \
     libglib2.0-0 libxext6 libsm6 libxrender1 \
     ca-certificates busybox wget fonts-ipaexfont && \
