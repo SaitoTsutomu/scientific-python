@@ -4,7 +4,7 @@ ENV PATH=/opt/conda/bin:$PATH \
     LANG=C.UTF-8 \
     DEBIAN_FRONTEND=noninteractive \
     MINICONDA=Miniconda3-latest-Linux-x86_64.sh
-COPY notebook.json /
+COPY notebook.json /root/.jupyter/nbconfig/
 RUN apt-get update --fix-missing && apt-get install -y --no-install-recommends \
         libglib2.0-0 libxext6 libsm6 libxrender1 busybox wget fonts-ipaexfont && \
     /bin/busybox --install && \
@@ -20,12 +20,11 @@ RUN apt-get update --fix-missing && apt-get install -y --no-install-recommends \
     pip install pulp pyjade more-itertools && \
     ln -s /usr/share/fonts/opentype/ipaexfont-gothic/ipaexg.ttf \
         /opt/conda/lib/python3.5/site-packages/matplotlib/mpl-data/fonts/ttf/ && \
+    mkdir -p /root/.local/share/jupyter && \
     unzip -q master.zip && \
-    mkdir -p /root/.local/share/jupyter /root/.jupyter/nbconfig && \
-    mv notebook.json /root/.jupyter/nbconfig/ && \
     cd IPython-notebook-extensions-master && \
     python setup.py install && \
     rm -rf /var/lib/apt/lists/* /$MINICONDA /IPython-notebook-extensions-master \
-           /master.zip /notebook.json /root/.c* /opt/conda/pkgs/* \
+           /master.zip /root/.c* /opt/conda/pkgs/* \
            /opt/conda/lib/python3.5/site-packages/pulp/solverdir/cbc/[ow]*
 CMD ["/bin/bash"]
