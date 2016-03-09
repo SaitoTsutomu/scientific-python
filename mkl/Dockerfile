@@ -4,6 +4,7 @@ ENV PATH=/opt/conda/bin:$PATH \
     LANG=C.UTF-8 \
     DEBIAN_FRONTEND=noninteractive \
     MINICONDA=Miniconda3-latest-Linux-x86_64.sh
+COPY notebook.json /
 RUN apt-get update --fix-missing && apt-get install -y --no-install-recommends \
         libglib2.0-0 libxext6 libsm6 libxrender1 busybox wget fonts-ipaexfont && \
     /bin/busybox --install && \
@@ -11,8 +12,7 @@ RUN apt-get update --fix-missing && apt-get install -y --no-install-recommends \
     echo 'export PATH=/opt/conda/bin:$PATH' > /etc/profile.d/conda.sh && \
     wget -q --no-check-certificate \
             https://repo.continuum.io/miniconda/$MINICONDA \
-            https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip \
-            https://raw.githubusercontent.com/Tsutomu-KKE/scientific-python/master/notebook.json && \
+            https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip && \
     bash /$MINICONDA -b -p /opt/conda && \
     conda update -y conda && \
     conda install -y matplotlib networkx scikit-learn jupyter blist bokeh blaze \
@@ -26,6 +26,6 @@ RUN apt-get update --fix-missing && apt-get install -y --no-install-recommends \
     cd IPython-notebook-extensions-master && \
     python setup.py install && \
     rm -rf /var/lib/apt/lists/* /$MINICONDA /IPython-notebook-extensions-master \
-           /master.zip /root/.c* /opt/conda/pkgs/* \
+           /master.zip /notebook.json /root/.c* /opt/conda/pkgs/* \
            /opt/conda/lib/python3.5/site-packages/pulp/solverdir/cbc/[ow]*
 CMD ["/bin/bash"]
