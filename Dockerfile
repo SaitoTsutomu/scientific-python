@@ -15,7 +15,7 @@ RUN apt-get update --fix-missing && apt-get install -y --no-install-recommends \
             https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip && \
     bash /$MINICONDA -b -p /opt/conda && \
     conda update -y conda && \
-    conda install -y nomkl matplotlib networkx scikit-learn jupyter blist bokeh blaze \
+    conda install -y nomkl pandas==0.17.1 matplotlib networkx scikit-learn jupyter blist bokeh blaze \
                   statsmodels ncurses seaborn dask flask markdown sympy && \
     pip install pulp pyjade more-itertools && \
     ln -s /usr/share/fonts/opentype/ipaexfont-gothic/ipaexg.ttf \
