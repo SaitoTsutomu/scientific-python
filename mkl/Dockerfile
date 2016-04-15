@@ -24,6 +24,7 @@ RUN apt-get update --fix-missing && apt-get install -y --no-install-recommends \
     unzip -q master.zip && \
     cd IPython-notebook-extensions-master && \
     python setup.py install && \
+    find /opt -name __pycache__ | xargs rm -r && \
     rm -rf /var/lib/apt/lists/* /$MINICONDA /IPython-notebook-extensions-master \
            /master.zip /root/.c* /opt/conda/pkgs/* \
            /opt/conda/lib/python3.5/site-packages/pulp/solverdir/cbc/[ow]*
