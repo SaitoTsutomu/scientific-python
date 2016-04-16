@@ -4,7 +4,6 @@ ENV PATH=/opt/conda/bin:$PATH \
     LANG=C.UTF-8 \
     DEBIAN_FRONTEND=noninteractive \
     MINICONDA=Miniconda3-latest-Linux-x86_64.sh
-COPY notebook.json /root/.jupyter/nbconfig/
 RUN apt-get update --fix-missing && apt-get install -y --no-install-recommends \
         libglib2.0-0 libxext6 libsm6 libxrender1 busybox wget fonts-ipaexfont && \
     /bin/busybox --install && \
