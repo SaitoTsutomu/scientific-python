@@ -2,7 +2,6 @@ Python3.5 and scientific packages. [![](https://badge.imagelayers.io/tsutomu7/sc
 ======
 
 - Japanese font installed. (Use "plt.rcParams['font.family'] = 'IPAexGothic'")
-- Jupyter nbextensions installed. (Edit menu - nbextension config)
 - Installed packages
 
 package|ver|package|ver|package|ver|package|ver
