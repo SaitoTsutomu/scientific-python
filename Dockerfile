@@ -13,7 +13,7 @@ RUN apt-get update --fix-missing && apt-get install -y --no-install-recommends \
             https://repo.continuum.io/miniconda/$MINICONDA && \
     bash /$MINICONDA -b -p /opt/conda && \
     conda update -y conda && \
-    conda install -y nomkl pandas==0.17.1 matplotlib networkx scikit-learn jupyter blist \
+    conda install -y nomkl pandas matplotlib networkx scikit-learn jupyter blist \
                      bokeh blaze statsmodels ncurses seaborn dask flask markdown sympy && \
     pip install pulp pyjade more-itertools && \
     ln -s /usr/share/fonts/opentype/ipaexfont-gothic/ipaexg.ttf \

@@ -21,7 +21,7 @@ mistune|0.7.2|more-itertools|2.2|mpmath|0.19|multipledispatch|0.4.8
 nbconvert|4.2.0|nbformat|4.0.1|ncurses|5.9|networkx|1.11
 nomkl|1.0|notebook|4.1.0|numba|0.25.0|numexpr|2.5.2
 numpy|1.10.4|odo|0.4.2|openblas|0.2.14|openssl|1.0.2g
-pandas|0.17.1|partd|0.3.2|path.py|8.2|patsy|0.4.1
+pandas|0.18.0|partd|0.3.2|path.py|8.2|patsy|0.4.1
 pexpect|4.0.1|pickleshare|0.5|pip|8.1.1|psutil|4.1.0
 ptyprocess|0.5|pulp|1.6.1|pycosat|0.6.1|pycrypto|2.6.1
 pygments|2.1.3|pyjade|4.0.0|pyparsing|2.0.3|pyqt|4.11.4
