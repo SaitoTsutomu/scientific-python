@@ -5,8 +5,10 @@ ENV PATH=/opt/conda/bin:$PATH \
     DEBIAN_FRONTEND=noninteractive \
     MINICONDA=Miniconda3-latest-Linux-x86_64.sh
 RUN apt-get update --fix-missing && apt-get install -y --no-install-recommends \
-        libglib2.0-0 libxext6 libsm6 libxrender1 busybox wget fonts-ipaexfont && \
+        libglib2.0-0 libxext6 libsm6 libxrender1 tzdata busybox wget fonts-ipaexfont && \
     /bin/busybox --install && \
+    cp --remove-destination /usr/share/zoneinfo/Japan /etc/localtime && \
+    apt-get remove tzdata && \
     apt-get clean && \
     echo 'export PATH=/opt/conda/bin:$PATH' > /etc/profile.d/conda.sh && \
     wget -q --no-check-certificate \
