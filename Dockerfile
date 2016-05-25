@@ -24,7 +24,7 @@ RUN export uid=1000 gid=1000 pswd=scientist && \
             https://repo.continuum.io/miniconda/$MINICONDA && \
     bash /$MINICONDA -b -p /opt/conda && \
     conda update -y conda && \
-    conda install -y nomkl pandas matplotlib networkx scikit-learn jupyter blist \
+    conda install -y nomkl pandas matplotlib networkx scikit-learn jupyter blist numexpr \
                      bokeh blaze statsmodels ncurses seaborn dask flask markdown sympy && \
     pip install pulp pyjade more-itertools && \
     ln -s /usr/share/fonts/opentype/ipaexfont-gothic/ipaexg.ttf \
