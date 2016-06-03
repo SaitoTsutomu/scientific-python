@@ -26,6 +26,7 @@ RUN export uid=1000 gid=1000 pswd=scientist && \
     conda update -y conda && \
     conda install -y nomkl pandas matplotlib networkx scikit-learn jupyter blist numexpr \
                      bokeh blaze statsmodels ncurses seaborn dask flask markdown sympy && \
+    pip install -U pip && \
     pip install pulp pyjade more-itertools && \
     ln -s /usr/share/fonts/opentype/ipaexfont-gothic/ipaexg.ttf \
         /opt/conda/lib/python3.5/site-packages/matplotlib/mpl-data/fonts/ttf/ && \
