@@ -5,13 +5,14 @@ ENV USER=scientist HOME=/home/scientist \
     LANG=C.UTF-8 \
     DEBIAN_FRONTEND=noninteractive \
     MINICONDA=Miniconda3-latest-Linux-x86_64.sh
+COPY notebook.json $HOME/.jupyter/nbconfig/
 RUN export uid=1000 gid=1000 pswd=scientist && \
     apt-get update --fix-missing && apt-get install -y --no-install-recommends sudo \
         libglib2.0-0 libxext6 libsm6 libxrender1 tzdata busybox wget fonts-ipaexfont && \
     groupadd -g $gid $USER && \
     useradd -g $USER -G sudo -m -s /bin/bash $USER && \
     echo "$USER:$pswd" | chpasswd && \
-    mkdir -p /home/$USER && \
+    mkdir -p $HOME/.local/share/jupyter && \
     mkdir -p /etc/sudoers.d && \
     echo "$USER ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/$USER && \
     chmod 0440 /etc/sudoers.d/$USER && \
@@ -28,10 +29,11 @@ RUN export uid=1000 gid=1000 pswd=scientist && \
                      bokeh blaze statsmodels ncurses seaborn dask flask markdown sympy && \
     pip install -U pip && \
     pip install pulp pyjade more-itertools && \
+    pip install https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip && \
     ln -s /usr/share/fonts/opentype/ipaexfont-gothic/ipaexg.ttf \
         /opt/conda/lib/python3.5/site-packages/matplotlib/mpl-data/fonts/ttf/ && \
     find /opt -name __pycache__ | xargs rm -r && \
-    chown ${uid}:${gid} -R /home/$USER /opt/conda && \
+    chown ${uid}:${gid} -R $HOME /opt/conda && \
     rm -rf /var/lib/apt/lists/* /$MINICONDA /root/.c* /opt/conda/pkgs/* \
            /opt/conda/lib/python3.5/site-packages/pulp/solverdir/cbc/[ow]* \
            /opt/conda/lib/python3.5/site-packages/pulp/solverdir/cbc/linux/32
