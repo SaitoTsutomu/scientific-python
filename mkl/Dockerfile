@@ -26,7 +26,7 @@ RUN export uid=1000 gid=1000 pswd=scientist && \
     bash /$MINICONDA -b -p /opt/conda && \
     conda update -y conda && \
     conda install -y pandas matplotlib networkx scikit-learn jupyter blist numexpr \
-                     bokeh blaze statsmodels ncurses seaborn dask flask markdown sympy && \
+                     bokeh blaze statsmodels ncurses seaborn dask flask markdown sympy psutil && \
     pip install -U pip && \
     pip install pulp pyjade more-itertools && \
     pip install https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip && \
