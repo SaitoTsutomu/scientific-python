@@ -9,5 +9,7 @@
     "usability/skip-traceback/main": true,
     "usability/ruler/main": true,
     "styling/zenmode/main": true
-  }
+  },
+  "zenmode_use_builtin_backgrounds": false,
+  "zenmode_set_zenmode_on_load": true
 }
