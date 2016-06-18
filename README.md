@@ -7,7 +7,7 @@ Python3.5 and scientific packages. [![](https://badge.imagelayers.io/tsutomu7/sc
 package|ver|package|ver|package|ver|package|ver
 :--|--:|:--|--:|:--|--:|:--|--:
 backports|1.0|blaze|0.10.1|blist|1.3.6|bokeh|0.11.1
-chest|0.2.3|click|6.6|cloudpickle|0.2.1|conda|4.1.0
+chest|0.2.3|click|6.6|cloudpickle|0.2.1|conda|4.1.2
 conda-env|2.5.0|cycler|0.10.0|cytoolz|0.8.0|dask|0.10.0
 datashape|0.5.2|decorator|4.0.10|entrypoints|0.2|flask|0.11.1
 flask-cors|2.1.2|fontconfig|2.11.1|freetype|2.5.5|get_terminal_size|1.0.0
@@ -22,12 +22,12 @@ ncurses|5.9|networkx|1.11|nomkl|1.0|notebook|4.2.1
 numba|0.26.0|numexpr|2.5.2|numpy|1.11.0|odo|0.5.0
 openblas|0.2.14|openssl|1.0.2g|pandas|0.18.1|partd|0.3.3
 path.py|8.2.1|patsy|0.4.1|pexpect|4.0.1|pickleshare|0.7.2
-pip|8.1.1|psutil|4.2.0|ptyprocess|0.5.1|pycosat|0.6.1
+pip|8.1.2|psutil|4.2.0|ptyprocess|0.5.1|pycosat|0.6.1
 pycrypto|2.6.1|pygments|2.1.3|pyparsing|2.1.4|pyqt|4.11.4
 pytables|3.2.2|python|3.5.1|Python-contrib-nbextensions|alpha|python-dateutil|2.5.3
 pytz|2016.4|pyyaml|3.11|pyzmq|15.2.0|qt|4.8.7
 qtconsole|4.2.1|readline|6.2|requests|2.9.1|ruamel_yaml|0.11.7
-scikit-learn|0.17.1|scipy|0.17.1|seaborn|0.7.0|setuptools|20.3
+scikit-learn|0.17.1|scipy|0.17.1|seaborn|0.7.0|setuptools|23.0.0
 simplegeneric|0.8.1|sip|4.16.9|six|1.10.0|sqlalchemy|1.0.13
 sqlite|3.9.2|statsmodels|0.6.1|sympy|1.0|terminado|0.6
 tk|8.5.18|toolz|0.8.0|tornado|4.3|traitlets|4.2.1
