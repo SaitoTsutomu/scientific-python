@@ -27,7 +27,8 @@ RUN export uid=1000 gid=1000 pswd=scientist && \
     conda update -y conda pip setuptools && \
     conda install -y nomkl pandas matplotlib networkx scikit-learn jupyter blist numexpr \
                      bokeh blaze statsmodels ncurses seaborn dask flask markdown sympy psutil && \
-    pip install -U pip && \
+    conda update -y requests && \
+    pip install -U pip pyparsing && \
     pip install pulp pyjade more-itertools && \
     pip install https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip && \
     sed -i '6,9d' $HOME/.jupyter/jupyter_nbconvert_config.json && \
