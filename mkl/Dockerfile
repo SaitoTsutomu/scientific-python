@@ -36,7 +36,7 @@ RUN export uid=1000 gid=1000 pswd=scientist && \
         /opt/conda/lib/python3.5/site-packages/matplotlib/mpl-data/fonts/ttf/ && \
     find /opt -name __pycache__ | xargs rm -r && \
     chown ${uid}:${gid} -R $HOME /opt/conda && \
-    rm -rf /var/lib/apt/lists/* /$MINICONDA /root/.c* /opt/conda/pkgs/* \
+    rm -rf /var/lib/apt/lists/* /$MINICONDA /root/.c* $HOME/.c* /opt/conda/pkgs/* \
            /opt/conda/lib/python3.5/site-packages/pulp/solverdir/cbc/[ow]* \
            /opt/conda/lib/python3.5/site-packages/pulp/solverdir/cbc/linux/32
 USER $USER
