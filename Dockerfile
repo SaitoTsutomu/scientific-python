@@ -27,15 +27,15 @@ RUN export uid=1000 gid=1000 pswd=scientist && \
     conda install -y nomkl pandas matplotlib networkx scikit-learn jupyter blist numexpr \
                      bokeh blaze statsmodels ncurses seaborn dask flask markdown sympy psutil && \
     conda update -y --all && \
-    pip install -U pip pyparsing && \
-    pip install pulp pyjade more-itertools && \
-    pip install https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip && \
+    pip install -U --no-cache pip pyparsing && \
+    pip install --no-cache pulp pyjade more-itertools && \
+    pip install --no-cache https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip && \
     sed -i '6,9d' $HOME/.jupyter/jupyter_nbconvert_config.json && \
     ln -s /usr/share/fonts/opentype/ipaexfont-gothic/ipaexg.ttf \
         /opt/conda/lib/python3.5/site-packages/matplotlib/mpl-data/fonts/ttf/ && \
     find /opt -name __pycache__ | xargs rm -r && \
     chown ${uid}:${gid} -R $HOME /opt/conda && \
-    rm -rf /var/lib/apt/lists/* /$MINICONDA /root/.c* $HOME/.c* /opt/conda/pkgs/* \
+    rm -rf /var/lib/apt/lists/* /$MINICONDA /opt/conda/pkgs/* \
            /opt/conda/lib/python3.5/site-packages/pulp/solverdir/cbc/[ow]* \
            /opt/conda/lib/python3.5/site-packages/pulp/solverdir/cbc/linux/32
 USER $USER
