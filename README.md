@@ -8,7 +8,7 @@ package|ver|package|ver|package|ver|package|ver
 :--|:--|:--|:--|:--|:--|:--|:--
 backports|1.0|backports.shutil_get_terminal_size|1.0.0|blaze|0.10.1|blist|1.3.6
 bokeh|0.12.0|chest|0.2.3|click|6.6|cloudpickle|0.2.1
-conda|4.1.4|conda_env|2.5.1|cycler|0.10.0|cytoolz|0.8.0
+conda|4.1.5|conda_env|2.5.1|cycler|0.10.0|cytoolz|0.8.0
 dask|0.10.0|datashape|0.5.2|decorator|4.0.10|entrypoints|0.2.2
 flask|0.11.1|flask_cors|2.1.2|fontconfig|2.11.1|freetype|2.5.5
 get_terminal_size|1.0.0|h5py|2.6.0|hdf5|1.8.16|heapdict|1.0.0
@@ -20,7 +20,7 @@ llvmlite|0.11.0|locket|0.2.0|markdown|2.6.6|markupsafe|0.23
 matplotlib|1.5.1|mistune|0.7.2|more_itertools|2.2|mpmath|0.19
 multipledispatch|0.4.8|nbconvert|4.2.0|nbformat|4.0.1|ncurses|5.9
 networkx|1.11|nomkl|1.0|notebook|4.2.1|numba|0.26.0
-numexpr|2.6.0|numpy|1.11.0|odo|0.5.0|openblas|0.2.14
+numexpr|2.6.0|numpy|1.11.1|odo|0.5.0|openblas|0.2.14
 openssl|1.0.2h|pandas|0.18.1|partd|0.3.4|path.py|8.2.1
 patsy|0.4.1|pexpect|4.0.1|pickleshare|0.7.2|pip|8.1.2
 psutil|4.3.0|ptyprocess|0.5.1|pulp|1.6.1|pycosat|0.6.1
