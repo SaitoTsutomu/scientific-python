@@ -5,7 +5,6 @@
     "usability/splitcell/splitcell": true,
     "usability/toc2/main": true,
     "usability/limit_output/main": true,
-    "config/config_menu/main": true,
     "usability/skip-traceback/main": true,
     "usability/ruler/main": true,
     "styling/zenmode/main": true,
