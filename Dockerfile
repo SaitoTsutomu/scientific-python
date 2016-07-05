@@ -5,7 +5,7 @@ ENV USER=scientist HOME=/home/scientist \
     LANG=C.UTF-8 \
     DEBIAN_FRONTEND=noninteractive \
     MINICONDA=Miniconda3-latest-Linux-x86_64.sh
-COPY notebook.json $HOME/.jupyter/nbconfig/
+ADD nb.tgz $HOME/.jupyter/nbconfig/
 RUN export uid=1000 gid=1000 pswd=scientist && \
     apt-get update --fix-missing && apt-get install -y --no-install-recommends sudo \
         libglib2.0-0 libxext6 libsm6 libxrender1 tzdata busybox wget fonts-ipaexfont && \
