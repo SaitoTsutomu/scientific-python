@@ -24,7 +24,7 @@ RUN export uid=1000 gid=1000 pswd=scientist && \
     wget -q --no-check-certificate \
             https://repo.continuum.io/miniconda/$MINICONDA && \
     bash /$MINICONDA -b -p /opt/conda && \
-    conda install -y pandas matplotlib networkx scikit-learn jupyter blist numexpr \
+    conda install -y pandas matplotlib networkx scikit-learn jupyter blist numexpr anaconda-client \
                      bokeh blaze statsmodels ncurses seaborn dask flask markdown sympy psutil && \
     conda update -y --all && \
     pip install --no-cache pulp pyjade more-itertools && \
