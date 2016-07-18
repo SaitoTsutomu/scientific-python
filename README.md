@@ -26,7 +26,7 @@ markupsafe|0.23|**matplotlib**|**1.5.1**|mistune|0.7.2
 more_itertools|2.2|mpmath|0.19|multipledispatch|0.4.8
 nbconvert|4.2.0|nbformat|4.0.1|ncurses|5.9
 **networkx**|**1.11**|nomkl|1.0|notebook|4.2.1
-numba|0.27.0|numexpr|2.6.0|**numpy**|**1.11.1**
+numba|0.27.0|numexpr|2.6.1|**numpy**|**1.11.1**
 odo|0.5.0|openblas|0.2.14|openssl|1.0.2h
 **pandas**|**0.18.1**|pango|1.39.0|partd|0.3.4
 path.py|8.2.1|patsy|0.4.1|pexpect|4.0.1
@@ -43,7 +43,7 @@ seaborn|0.7.0|setuptools|23.0.0|simplegeneric|0.8.1
 sip|4.18|six|1.10.0|sqlalchemy|1.0.13
 sqlite|3.13.0|statsmodels|0.6.1|**sympy**|**1.0**
 tables|3.2.2|terminado|0.6|tk|8.5.18
-toolz|0.8.0|tornado|4.3|traitlets|4.2.1
+toolz|0.8.0|tornado|4.3|traitlets|4.2.2
 wcwidth|0.1.7|werkzeug|0.11.10|wheel|0.29.0
 xz|5.2.2|yaml|0.1.6|zeromq|4.1.4
 zlib|1.2.8|
