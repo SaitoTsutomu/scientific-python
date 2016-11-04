@@ -6,10 +6,10 @@ Python3.5 and scientific packages. [![](https://badge.imagelayers.io/tsutomu7/sc
 
 package|ver|package|ver|package|ver
 :--|:--|:--|:--|:--|:--
-_nb_ext_conf|0.3.0|anaconda_client|1.5.2|blaze|0.10.1
+_nb_ext_conf|0.3.0|anaconda_client|1.5.3|blaze|0.10.1
 blist|1.3.6|bokeh|0.12.3|chest|0.2.3
 click|6.6|cloudpickle|0.2.1|clyent|1.2.2
-**conda**|**4.1.12**|conda_env|2.5.2|cycler|0.10.0
+**conda**|**4.2.12**|conda_env|2.6.0|cycler|0.10.0
 cytoolz|0.8.0|dask|0.11.1|datashape|0.5.2
 dbus|1.10.10|decorator|4.0.10|entrypoints|0.2.2
 expat|2.1.0|**flask**|**0.11.1**|flask_cors|2.1.2
@@ -33,18 +33,18 @@ nomkl|1.0|notebook|4.2.3|numba|0.29.0
 numexpr|2.6.1|**numpy**|**1.11.2**|odo|0.5.0
 openblas|0.2.14|openssl|1.0.2j|**pandas**|**0.19.0**
 partd|0.3.6|path.py|8.2.1|patsy|0.4.1
-pexpect|4.0.1|pickleshare|0.7.4|**pip**|**8.1.2**
-prompt_toolkit|1.0.3|psutil|4.4.0|ptyprocess|0.5.1
+pexpect|4.0.1|pickleshare|0.7.4|**pip**|**9.0.0**
+prompt_toolkit|1.0.8|psutil|4.4.2|ptyprocess|0.5.1
 **pulp**|**1.6.1**|pycosat|0.6.1|pycrypto|2.6.1
 pygments|2.1.3|pyjade|4.0.0|pyparsing|2.1.4
-pyqt|5.6.0|pytables|3.2.3.1|**python**|**3.5.2**
+pyqt|5.6.0|pytables|3.3.0|**python**|**3.5.2**
 python_dateutil|2.5.3|pytz|2016.7|pyyaml|3.12
 pyzmq|16.0.0|qt|5.6.0|qtconsole|4.2.1
 readline|6.2|requests|2.11.1|ruamel_yaml|0.11.14
 scikit_learn|0.18|**scipy**|**0.18.1**|seaborn|0.7.1
 setuptools|27.2.0|simplegeneric|0.8.1|sip|4.18
-six|1.10.0|sqlalchemy|1.1.2|sqlite|3.13.0
-statsmodels|0.6.1|**sympy**|**1.0**|tables|3.2.3.1
+six|1.10.0|sqlalchemy|1.1.3|sqlite|3.13.0
+statsmodels|0.6.1|**sympy**|**1.0**|tables|3.3.0
 terminado|0.6|tk|8.5.18|toolz|0.8.0
 tornado|4.4.2|traitlets|4.3.1|wcwidth|0.1.7
 werkzeug|0.11.11|wheel|0.29.0|widgetsnbextension|1.2.6
