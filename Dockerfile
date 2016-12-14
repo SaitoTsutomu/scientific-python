@@ -25,7 +25,7 @@ RUN export uid=1000 gid=1000 pswd=scientist && \
             https://repo.continuum.io/miniconda/$MINICONDA && \
     bash /$MINICONDA -b -p /opt/conda && \
     conda install -y nomkl pandas matplotlib networkx scikit-learn jupyter blist numexpr anaconda-client \
-                     bokeh blaze statsmodels ncurses seaborn dask flask markdown sympy psutil && \
+                     bokeh blaze statsmodels ncurses seaborn dask flask markdown sympy psutil redis && \
     conda update -y --all && \
     pip install --no-cache pulp pyjade more-itertools && \
     #pip install --no-cache https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip && \
