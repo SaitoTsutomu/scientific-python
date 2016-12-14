@@ -24,9 +24,9 @@ RUN export uid=1000 gid=1000 pswd=scientist && \
     wget -q --no-check-certificate \
             https://repo.continuum.io/miniconda/$MINICONDA && \
     bash /$MINICONDA -b -p /opt/conda && \
-    conda install -y nomkl pandas matplotlib networkx scikit-learn jupyter blist numexpr \
-            anaconda-client bokeh blaze statsmodels ncurses seaborn dask flask markdown \
-            sympy psutil more-itertools redis redis-py && \
+    conda install -y nomkl networkx scikit-learn jupyter blist \
+            statsmodels ncurses seaborn dask flask markdown \
+            sympy psutil more-itertools redis-py && \
     conda update -y --all && \
     pip install --no-cache pulp pyjade && \
     #pip install --no-cache https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip && \
