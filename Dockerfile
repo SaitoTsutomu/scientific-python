@@ -27,7 +27,7 @@ RUN export uid=1000 gid=1000 pswd=scientist && \
     conda install -y nomkl pandas matplotlib networkx scikit-learn jupyter blist numexpr anaconda-client \
                      bokeh blaze statsmodels ncurses seaborn dask flask markdown sympy psutil redis && \
     conda update -y --all && \
-    pip install --no-cache pulp pyjade more-itertools && \
+    pip install --no-cache pulp pyjade more-itertools redis && \
     #pip install --no-cache https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip && \
     #sed -i '6,9d' $HOME/.jupyter/jupyter_nbconvert_config.json && \
     conda install -y -c conda-forge jupyter_nbextensions_configurator jupyter_contrib_nbextensions && \
