@@ -6,6 +6,7 @@ ENV USER=scientist HOME=/home/scientist \
     DEBIAN_FRONTEND=noninteractive \
     MINICONDA=Miniconda3-latest-Linux-x86_64.sh
 ADD nb.tgz $HOME/.jupyter/nbconfig/
+ADD jupyter_notebook_config.py $HOME/.jupyter/
 RUN export uid=1000 gid=1000 pswd=scientist && \
     apt-get update --fix-missing && apt-get install -y --no-install-recommends sudo \
         libglib2.0-0 libxext6 libsm6 libxrender1 tzdata busybox wget fonts-ipaexfont && \
@@ -24,12 +25,14 @@ RUN export uid=1000 gid=1000 pswd=scientist && \
     wget -q --no-check-certificate \
             https://repo.continuum.io/miniconda/$MINICONDA && \
     bash /$MINICONDA -b -p /opt/conda && \
-    conda install -y pandas matplotlib networkx scikit-learn jupyter blist numexpr anaconda-client \
-                     bokeh blaze statsmodels ncurses seaborn dask flask markdown sympy psutil && \
+    conda install -y qt=4 networkx scikit-learn jupyter blist numexpr blaze \
+            statsmodels ncurses seaborn dask flask markdown sympy psutil \
+            more-itertools redis-py gunicorn && \
     conda update -y --all && \
-    pip install --no-cache pulp pyjade more-itertools && \
+    pip install --no-cache pulp pyjade pypdf2 && \
     #pip install --no-cache https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip && \
     #sed -i '6,9d' $HOME/.jupyter/jupyter_nbconvert_config.json && \
+    conda install -y -c conda-forge jupyter_nbextensions_configurator jupyter_contrib_nbextensions && \
     ln -s /usr/share/fonts/opentype/ipaexfont-gothic/ipaexg.ttf /usr/share/fonts/ipaexg.ttf && \
     find /opt -name __pycache__ | xargs rm -r && \
     chown ${uid}:${gid} -R $HOME /opt/conda && \
