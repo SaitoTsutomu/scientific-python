@@ -25,10 +25,10 @@ RUN export uid=1000 gid=1000 pswd=scientist && \
     wget -q --no-check-certificate \
             https://repo.continuum.io/miniconda/$MINICONDA && \
     bash /$MINICONDA -b -p /opt/conda && \
+    conda update -y --all && \
     conda install -y qt=4 networkx scikit-learn jupyter blist numexpr blaze \
             statsmodels ncurses seaborn dask flask markdown sympy psutil \
             more-itertools redis-py gunicorn && \
-    conda update -y --all && \
     pip install --no-cache pulp pyjade pypdf2 && \
     #pip install --no-cache https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip && \
     #sed -i '6,9d' $HOME/.jupyter/jupyter_nbconvert_config.json && \
