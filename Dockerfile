@@ -26,9 +26,9 @@ RUN export uid=1000 gid=1000 pswd=scientist && \
             https://repo.continuum.io/miniconda/$MINICONDA && \
     bash /$MINICONDA -b -p /opt/conda && \
     conda update -y --all && \
-    conda install -y nomkl qt=4 networkx scikit-learn jupyter blist numexpr blaze \
+    conda install -y nomkl networkx scikit-learn jupyter blist numexpr blaze \
             statsmodels ncurses seaborn dask flask markdown sympy psutil \
-            more-itertools redis-py gunicorn && \
+            more-itertools redis-py gunicorn coverage && \
     pip install --no-cache pulp pyjade pypdf2 && \
     #pip install --no-cache https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip && \
     #sed -i '6,9d' $HOME/.jupyter/jupyter_nbconvert_config.json && \
