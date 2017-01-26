@@ -32,7 +32,7 @@ RUN export uid=1000 gid=1000 pswd=scientist && \
     pip install --no-cache pulp pyjade pypdf2 ortoolpy && \
     #pip install --no-cache https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip && \
     #sed -i '6,9d' $HOME/.jupyter/jupyter_nbconvert_config.json && \
-    conda install -y -c conda-forge jupyter_nbextensions_configurator jupyter_contrib_nbextensions && \
+    conda install -y -c conda-forge jupyter_contrib_nbextensions && \
     ln -s /usr/share/fonts/opentype/ipaexfont-gothic/ipaexg.ttf /usr/share/fonts/ipaexg.ttf && \
     find /opt -name __pycache__ | xargs rm -r && \
     chown ${uid}:${gid} -R $HOME /opt/conda && \
