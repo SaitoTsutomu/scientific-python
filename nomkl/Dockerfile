@@ -7,7 +7,7 @@ ENV USER=scientist HOME=/home/scientist \
     MINICONDA=Miniconda3-latest-Linux-x86_64.sh
 ADD nb.tgz $HOME/.jupyter/nbconfig/
 ADD jupyter_notebook_config.py $HOME/.jupyter/
-ADD frame.diff /tmp
+ADD frames.diff /tmp
 RUN export uid=1000 gid=1000 pswd=scientist && \
     apt-get update --fix-missing && apt-get install -y --no-install-recommends sudo \
         libglib2.0-0 libxext6 libsm6 libxrender1 tzdata busybox wget fonts-ipaexfont && \
