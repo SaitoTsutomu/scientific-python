@@ -38,7 +38,7 @@ RUN export uid=1000 gid=1000 pswd=scientist && \
     ln -s /usr/share/fonts/opentype/ipaexfont-gothic/ipaexg.ttf /usr/share/fonts/ipaexg.ttf && \
     find /opt -name __pycache__ | xargs rm -r && \
     chown ${uid}:${gid} -R $HOME /opt/conda && \
-    rm -rf /var/lib/apt/lists/* /$MINICONDA /opt/conda/pkgs/* /tmp/frame.diff \
+    rm -rf /var/lib/apt/lists/* /$MINICONDA /opt/conda/pkgs/* /tmp/frames.diff \
            /opt/conda/lib/python3.5/site-packages/pulp/solverdir/cbc/[ow]* \
            /opt/conda/lib/python3.5/site-packages/pulp/solverdir/cbc/linux/32
 USER $USER
