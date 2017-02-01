@@ -7,7 +7,6 @@ ENV USER=scientist HOME=/home/scientist \
     MINICONDA=Miniconda3-latest-Linux-x86_64.sh
 ADD nb.tgz $HOME/.jupyter/nbconfig/
 ADD jupyter_notebook_config.py $HOME/.jupyter/
-ADD frames.diff /tmp
 RUN export uid=1000 gid=1000 pswd=scientist && \
     apt-get update --fix-missing && apt-get install -y --no-install-recommends sudo \
         libglib2.0-0 libxext6 libsm6 libxrender1 tzdata busybox wget fonts-ipaexfont && \
@@ -38,8 +37,7 @@ RUN export uid=1000 gid=1000 pswd=scientist && \
     find /opt -name __pycache__ | xargs rm -r && \
     chown ${uid}:${gid} -R $HOME /opt/conda && \
     cd /opt/conda/lib/python3.5/site-packages/reportlab/platypus && \
-    patch frames.py < /tmp/frames.diff && \
-    rm -rf /var/lib/apt/lists/* /$MINICONDA /opt/conda/pkgs/* /tmp/frames.diff \
+    rm -rf /var/lib/apt/lists/* /$MINICONDA /opt/conda/pkgs/* \
            /opt/conda/lib/python3.5/site-packages/pulp/solverdir/cbc/[ow]* \
            /opt/conda/lib/python3.5/site-packages/pulp/solverdir/cbc/linux/32
 USER $USER
