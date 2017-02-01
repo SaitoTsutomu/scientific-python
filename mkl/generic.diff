@@ -1,0 +1,13 @@
+--- /opt/conda/lib/python3.5/site-packages/PyPDF2/generic.py	2016-12-19 15:39:48.369703000 +0900
++++ generic.py	2017-02-01 14:50:50.273869879 +0900
+@@ -483,6 +483,10 @@
+         try:
+             return NameObject(name.decode('utf-8'))
+         except (UnicodeEncodeError, UnicodeDecodeError) as e:
++            try:
++                return NameObject(name.decode('cp932'))
++            except:
++                pass
+             # Name objects should represent irregular characters
+             # with a '#' followed by the symbol's hex number
+             if not pdf.strict:

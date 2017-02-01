@@ -1,0 +1,14 @@
+--- /opt/conda/lib/python3.5/site-packages/PyPDF2/utils.py	2016-12-19 15:39:48.369703000 +0900
++++ utils.py	2017-02-01 14:50:50.277869858 +0900
+@@ -235,7 +235,10 @@
+         if type(s) == bytes:
+             return s
+         else:
+-            r = s.encode('latin-1')
++            try:
++                r = s.encode('latin-1')
++            except:
++                r = s.encode('utf8')
+             if len(s) < 2:
+                 bc[s] = r
+             return r
