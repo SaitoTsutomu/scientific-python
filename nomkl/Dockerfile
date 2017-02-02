@@ -30,7 +30,7 @@ RUN export uid=1000 gid=1000 pswd=scientist && \
     conda install -y nomkl networkx scikit-learn jupyter blist numexpr blaze \
             statsmodels ncurses seaborn dask flask markdown sympy psutil \
             more-itertools redis-py gunicorn coverage reportlab && \
-    pip install --no-cache pulp pyjade pypdf2==1.26.0 ortoolpy yapf pdfformfiller && \
+    pip install --no-cache pulp pyjade pypdf2==1.26.0 ortoolpy yapf pdfformfiller pdfrw && \
     #pip install --no-cache https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip && \
     #sed -i '6,9d' $HOME/.jupyter/jupyter_nbconvert_config.json && \
     conda install -y -c conda-forge jupyter_contrib_nbextensions && \
