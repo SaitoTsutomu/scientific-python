@@ -1,0 +1,14 @@
+--- /opt/conda/lib/python3.5/site-packages/reportlab/pdfbase/pdfdoc.py	2016-02-19 09:07:39.000000000 +0900
++++ pdfdoc.py	2017-02-02 17:47:38.480249758 +0900
+@@ -88,7 +88,10 @@
+     elif isBytes(element):
+         return element
+     elif isUnicode(element):
+-        return pdfdocEnc(element)
++        try:
++            return pdfdocEnc(element)
++        except:
++            return element.encode('utf8')
+     else:
+         return pdfdocEnc(str(element))
+ 
