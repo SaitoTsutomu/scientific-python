@@ -37,14 +37,14 @@ RUN export uid=1000 gid=1000 pswd=scientist && \
     ln -s /usr/share/fonts/opentype/ipaexfont-gothic/ipaexg.ttf /usr/share/fonts/ipaexg.ttf && \
     find /opt -name __pycache__ | xargs rm -r && \
     chown ${uid}:${gid} -R $HOME /opt/conda && \
-    cd /opt/conda/lib/python3.5/site-packages/PyPDF2 && \
+    cd /opt/conda/lib/python3.6/site-packages/PyPDF2 && \
     patch generic.py < /tmp/generic.diff && \
     patch utils.py < /tmp/utils.diff && \
-    cd /opt/conda/lib/python3.5/site-packages/reportlab/pdfbase && \
+    cd /opt/conda/lib/python3.6/site-packages/reportlab/pdfbase && \
     patch pdfdoc.py < /tmp/pdfdoc.diff && \
     rm -rf /var/lib/apt/lists/* /$MINICONDA /opt/conda/pkgs/* /tmp/*.diff \
-           /opt/conda/lib/python3.5/site-packages/pulp/solverdir/cbc/[ow]* \
-           /opt/conda/lib/python3.5/site-packages/pulp/solverdir/cbc/linux/32
+           /opt/conda/lib/python3.6/site-packages/pulp/solverdir/cbc/[ow]* \
+           /opt/conda/lib/python3.6/site-packages/pulp/solverdir/cbc/linux/32
 USER $USER
 WORKDIR $HOME
 CMD ["/bin/bash"]
