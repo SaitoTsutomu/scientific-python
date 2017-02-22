@@ -1,4 +1,4 @@
-Python3.5 and scientific packages. [![](https://badge.imagelayers.io/tsutomu7/scientific-python:latest.svg)](https://imagelayers.io/?images=tsutomu7/scientific-python:latest)
+Python3.6 and scientific packages. [![](https://badge.imagelayers.io/tsutomu7/scientific-python:latest.svg)](https://imagelayers.io/?images=tsutomu7/scientific-python:latest)
 ======
 
 - Japanese font installed. (Use "plt.rcParams['font.family'] = 'IPAexGothic'")
