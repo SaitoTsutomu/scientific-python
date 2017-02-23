@@ -28,9 +28,11 @@ RUN export uid=1000 gid=1000 pswd=scientist && \
     bash /$MINICONDA -b -p /opt/conda && \
     conda update -y --all && \
     conda install -y networkx scikit-learn jupyter blist numexpr blaze \
-            statsmodels ncurses seaborn dask flask markdown sympy psutil \
-            more-itertools redis-py gunicorn coverage reportlab && \
-    pip install --no-cache pulp pyjade pypdf2==1.26.0 ortoolpy yapf pdfformfiller pdfrw && \
+        statsmodels ncurses seaborn dask flask markdown sympy psutil \
+        more-itertools redis-py gunicorn coverage reportlab && \
+    pip install --no-cache pulp pyjade pypdf2==1.26.0 \
+        ortoolpy yapf pdfformfiller pdfrw jupyter_dashboards && \
+    jupyter dashboards quick-setup --sys-prefix && \
     #pip install --no-cache https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip && \
     #sed -i '6,9d' $HOME/.jupyter/jupyter_nbconvert_config.json && \
     conda install -y -c conda-forge jupyter_contrib_nbextensions && \
