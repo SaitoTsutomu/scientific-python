@@ -11,7 +11,7 @@ blaze|0.10.1|bleach|1.5.0|blist|1.3.6
 bokeh|0.12.4|cffi|1.9.1|chest|0.2.3
 click|6.7|cloudpickle|0.2.2|**conda**|**4.3.14**
 conda_env|2.6.0|coverage|4.3.4|cryptography|1.7.1
-cycler|0.10.0|cytoolz|0.8.2|dask|0.14.0
+cycler|0.10.0|cytoolz|0.8.2|dask|0.14.1
 datashape|0.5.4|dbus|1.10.10|decorator|4.0.11
 entrypoints|0.2.2|expat|2.1.0|**flask**|**0.12**
 flask_cors|3.0.2|fontconfig|2.12.1|freetype|2.5.5
@@ -40,11 +40,11 @@ partd|0.3.7|pastedeploy|1.5.2|path.py|10.1
 patsy|0.4.1|pcre|8.39|pdfformfiller|0.4
 pdfrw|0.3|pexpect|4.2.1|pickleshare|0.7.4
 pillow|4.0.0|**pip**|**9.0.1**|prompt_toolkit|1.0.13
-psutil|5.2.0|ptyprocess|0.5.1|**pulp**|**1.6.5**
+psutil|5.2.1|ptyprocess|0.5.1|**pulp**|**1.6.5**
 pyasn1|0.2.3|pycosat|0.6.2|pycparser|2.17
 pygments|2.2.0|pyjade|4.0.0|pyopenssl|16.2.0
 pyparsing|2.1.4|pypdf2|1.26.0|pyqt|5.6.0
-pytables|3.3.0|**python**|**3.6.0**|python_dateutil|2.6.0
+pytables|3.3.0|**python**|**3.6.1**|python_dateutil|2.6.0
 pytz|2016.10|pyyaml|3.12|pyzmq|16.0.2
 qt|5.6.2|qtconsole|4.2.1|readline|6.2
 redis|3.2.0|redis_py|2.10.5|reportlab|3.4.0
