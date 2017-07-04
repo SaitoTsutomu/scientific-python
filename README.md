@@ -10,7 +10,7 @@ package|ver|package|ver|package|ver
 asn1crypto|0.22.0|bkcharts|0.2|blaze|0.10.1
 bleach|1.5.0|blist|1.3.6|bokeh|0.12.6
 cffi|1.10.0|click|6.7|cloudpickle|0.2.2
-**conda**|**4.3.22**|conda_env|2.6.0|coverage|4.3.4
+**conda**|**4.3.22**|conda_env|2.6.0|coverage|4.4.1
 cryptography|1.8.1|cycler|0.10.0|cytoolz|0.8.2
 dask|0.15.0|datashape|0.5.4|dbus|1.10.10
 decorator|4.0.11|entrypoints|0.2.2|expat|2.1.0
@@ -22,7 +22,7 @@ idna|2.5|ipykernel|4.6.1|**ipython**|**6.1.0**
 ipython_genutils|0.2.0|ipywidgets|6.0.0|itsdangerous|0.24
 jbig|2.1|jedi|0.10.2|jinja2|2.9.6
 jpeg|9b|jsonschema|2.6.0|**jupyter**|**1.0.0**
-jupyter_client|5.0.1|jupyter_console|5.1.0|jupyter_contrib_core|0.3.1
+jupyter_client|5.1.0|jupyter_console|5.1.0|jupyter_contrib_core|0.3.1
 jupyter_contrib_nbextensions|0.2.8|jupyter_core|4.3.0|jupyter_dashboards|0.7.0
 jupyter_highlight_selected_word|0.0.11|jupyter_latex_envs|1.3.8.2|jupyter_nbextensions_configurator|0.2.5
 libffi|3.2.1|libgcc|5.2.0|libgfortran|3.0.0
@@ -35,11 +35,11 @@ nbconvert|5.2.1|nbformat|4.3.0|ncurses|5.9
 **networkx**|**1.11**|nomkl|1.0|notebook|5.0.0
 numba|0.33.0|numexpr|2.6.2|**numpy**|**1.12.1**
 odo|0.5.0|olefile|0.44|openblas|0.2.19
-openssl|1.0.2l|ortoolpy|0.1.40|packaging|16.8
+openssl|1.0.2l|ortoolpy|0.1.45|packaging|16.8
 **pandas**|**0.20.2**|pandocfilters|1.4.1|partd|0.3.8
 pastedeploy|1.5.2|path.py|10.3.1|patsy|0.4.1
 pcre|8.39|pdfformfiller|0.4|pdfrw|0.3
-pexpect|4.2.1|pickleshare|0.7.4|pillow|4.1.1
+pexpect|4.2.1|pickleshare|0.7.4|pillow|4.2.0
 **pip**|**9.0.1**|pivottablejs|2.7.0|prompt_toolkit|1.0.14
 psutil|5.2.2|ptyprocess|0.5.1|**pulp**|**1.6.5**
 pycosat|0.6.2|pycparser|2.17|pygments|2.2.0
@@ -49,7 +49,7 @@ pypdf2|1.26.0|pyqt|5.6.0|pytables|3.3.0
 pyyaml|3.12|pyzmq|16.0.2|qt|5.6.2
 qtconsole|4.3.0|readline|6.2|redis|3.2.0
 redis_py|2.10.5|reportlab|3.4.0|requests|2.14.2
-ruamel_yaml|0.11.14|scikit_learn|0.18.1|**scipy**|**0.19.0**
+ruamel_yaml|0.11.14|scikit_learn|0.18.2|**scipy**|**0.19.1**
 seaborn|0.7.1|setuptools|27.2.0|simplegeneric|0.8.1
 sip|4.18|six|1.10.0|sqlalchemy|1.1.11
 sqlite|3.13.0|statsmodels|0.8.0|**sympy**|**1.0**
