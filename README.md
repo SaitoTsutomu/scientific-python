@@ -10,7 +10,7 @@ package|ver|package|ver|package|ver
 asn1crypto|0.22.0|bkcharts|0.2|blaze|0.10.1
 bleach|1.5.0|blist|1.3.6|bokeh|0.12.7
 certifi|2016.2.28|cffi|1.10.0|click|6.7
-cloudpickle|0.4.0|**conda**|**4.3.23**|conda_env|2.6.0
+cloudpickle|0.4.0|**conda**|**4.3.25**|conda_env|2.6.0
 coverage|4.4.1|cryptography|1.8.1|cycler|0.10.0
 cytoolz|0.8.2|dask|0.15.2|datashape|0.5.4
 dbus|1.10.20|decorator|4.1.2|entrypoints|0.2.3
@@ -28,12 +28,12 @@ jupyter_dashboards|0.7.0|jupyter_highlight_selected_word|0.0.11|jupyter_latex_en
 jupyter_nbextensions_configurator|0.2.7|libffi|3.2.1|libgcc|5.2.0
 libgfortran|3.0.0|libiconv|1.14|libpng|1.6.30
 libsodium|1.0.10|libtiff|4.0.6|libxcb|1.12
-libxml2|2.9.4|llvmlite|0.19.0|locket|0.2.0
+libxml2|2.9.4|llvmlite|0.20.0|locket|0.2.0
 markdown|2.6.9|markupsafe|1.0|**matplotlib**|**2.0.2**
 mistune|0.7.4|more_itertools|3.2.0|mpmath|0.19
 multipledispatch|0.4.9|nbconvert|5.2.1|nbformat|4.4.0
 ncurses|5.9|**networkx**|**1.11**|nomkl|1.0
-notebook|5.0.0|numba|0.34.0|numexpr|2.6.2
+notebook|5.0.0|numba|0.35.0|numexpr|2.6.2
 **numpy**|**1.13.1**|odo|0.5.1|olefile|0.44
 openblas|0.2.19|openssl|1.0.2l|ortoolpy|0.1.50
 packaging|16.8|**pandas**|**0.20.3**|pandocfilters|1.4.2
