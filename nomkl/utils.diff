@@ -1,5 +1,5 @@
---- /opt/conda/lib/python3.5/site-packages/PyPDF2/utils.py	2016-12-19 15:39:48.369703000 +0900
-+++ utils.py	2017-02-01 14:50:50.277869858 +0900
+--- old/utils.py        2016-05-19 01:47:24.000000000 +0900
++++ new/utils.py        2017-10-03 09:51:55.531971975 +0900
 @@ -235,7 +235,10 @@
          if type(s) == bytes:
              return s

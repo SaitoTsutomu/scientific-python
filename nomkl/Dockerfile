@@ -35,8 +35,6 @@ RUN export uid=1000 gid=1000 pswd=scientist && \
     jupyter dashboards quick-setup --sys-prefix && \
     #pip install --no-cache https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip && \
     #sed -i '6,9d' $HOME/.jupyter/jupyter_nbconvert_config.json && \
-    conda install -y -c conda-forge ipywidgets jupyter_contrib_nbextensions && \
-    jupyter nbextension enable --py widgetsnbextension && \
     ln -s /usr/share/fonts/opentype/ipaexfont-gothic/ipaexg.ttf /usr/share/fonts/ipaexg.ttf && \
     find /opt -name __pycache__ | xargs rm -r && \
     chown ${uid}:${gid} -R $HOME /opt/conda && \

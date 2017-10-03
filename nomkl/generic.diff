@@ -1,5 +1,5 @@
---- /opt/conda/lib/python3.5/site-packages/PyPDF2/generic.py	2016-12-19 15:39:48.369703000 +0900
-+++ generic.py	2017-02-01 14:50:50.273869879 +0900
+--- old/generic.py	2016-05-19 01:47:24.000000000 +0900
++++ new/generic.py	2017-10-03 09:43:12.318495974 +0900
 @@ -483,6 +483,10 @@
          try:
              return NameObject(name.decode('utf-8'))
