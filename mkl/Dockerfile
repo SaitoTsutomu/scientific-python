@@ -33,6 +33,7 @@ RUN export uid=1000 gid=1000 pswd=scientist && \
     pip install --no-cache pulp pyjade pypdf2==1.26.0 \
         ortoolpy yapf pdfformfiller pdfrw jupyter_dashboards toml && \
     jupyter dashboards quick-setup --sys-prefix && \
+    jupyter nbextension enable --py --sys-prefix widgetsnbextension && \
     #pip install --no-cache https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip && \
     #sed -i '6,9d' $HOME/.jupyter/jupyter_nbconvert_config.json && \
     ln -s /usr/share/fonts/opentype/ipaexfont-gothic/ipaexg.ttf /usr/share/fonts/ipaexg.ttf && \
