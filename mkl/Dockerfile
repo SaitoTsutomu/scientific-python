@@ -29,7 +29,7 @@ RUN export uid=1000 gid=1000 pswd=scientist && \
     conda update -y --all && \
     conda install -y networkx scikit-learn jupyter blist numexpr blaze \
         statsmodels ncurses seaborn dask flask markdown sympy psutil \
-        more-itertools redis-py gunicorn coverage reportlab pivottablejs && \
+        more-itertools redis redis-py gunicorn coverage reportlab pivottablejs && \
     pip install --no-cache pulp pyjade pypdf2==1.26.0 \
         ortoolpy yapf pdfformfiller pdfrw jupyter_dashboards toml && \
     jupyter dashboards quick-setup --sys-prefix && \
